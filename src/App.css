@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+/* ******************* Typography ******************* */
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat";
+    font-style: normal;
+    color: #000000;
+}
+
+h1,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.1px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.subtitle-1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.subtitle-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.body-1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.body-2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+.small-1 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+
+.small-2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+
+/* ********** Text Color ********** */
+.text-dark {
+    color: #000000;
+}
+.text-secondary {
+    color: #515151;
+}
+.text-inactive {
+    color: #7c7c7c;
+}
+
+.bg-primary-tv,
+.bg-success-tv {
+    background-color: #50af47;
+}
+.bg-danger-tv {
+    background-color: #ff5500;
+}
+.bg-warning-tv {
+    background-color: #ffee11;
+}
+.bg-info-tv {
+    background-color: #5873cf;
+}
+
+/* ********** button ********** */
+.btn {
+    font-family: "Montserrat";
+    border-radius: 8px;
+    margin: 0.25rem 0.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.btn-flex {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.btn-flex span {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+}
+
+.btn-pill {
+    border-radius: 2rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0.1rem 0.1rem;
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.btn-primary {
+    background: #50af47;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background: #447f40;
+    border-color: #146c43;
+}
+
+.btn-warning {
+    background: #ffee11;
+    color: #000000;
+}
+.btn-warning:hover {
+    background: #e7d728;
+}
+
+.btn-danger {
+    background: #ff5500;
+    color: #ffffff;
+}
+.btn-danger:hover {
+    background: #c14f27;
+}
+
+/* ------------------- */
+/* ------------------- */
+/* ------------------- */
+/* ------------------- */
+/* .floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 200px;
+}
+.floating-label {
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 12px;
+    transition: all 0.1s ease;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+    top: -15px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 11px;
+    opacity: 1;
+    color: #404040;
+} */
+
+/* ********** input-teknovus ********** */
+.input-group-teknovus {
+    position: relative;
+    margin: 15px 0;
+}
+
+.label-teknovus {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #a8a8a8;
+    /* padding: 0 0.375rem; */
+    margin: 0 0.1rem;
+    transition: 0.1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+    border: 0;
+}
+.input-teknovus {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #7c7c7c;
+    /* border-radius: 8px; */
+    padding: 0.375rem 0.75rem;
+    color: #000000;
+    transition: 0.1s ease-out;
+}
+.input-teknovus:focus {
+    border-color: #50af47;
+}
+.input-teknovus:focus + label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #50af47;
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+}
+.input-teknovus:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+}
+
+.border-all {
+    border: 1px solid #50af47;
+}
+.input-teknovus:focus {
+    padding-left: 0;
+    padding-right: 24px;
+}
+
+
+
+
+
+
+
+/* input----v2 */
+
+.form-row {
+    margin-bottom: 20px;
+    padding: 4px 0;
+    position: relative; }
+  .form-block {
+    border: 1px solid #cccccc;
+    margin-bottom: 8px;
+    padding: 8px 12px; }
+  
+  .input-text {
+    background-color: white;
+    -webkit-appearance: none;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    font-family: Arial;
+    margin-bottom: 8px;
+    padding: 8px 4px;
+    position: relative;
+    z-index: 3; }
+    .input-text:focus {
+      box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
+      background-color: #fafafa; }
+  
+  .label-helper {
+    position: absolute;
+    opacity: 0;
+    transition: .2s bottom, .2s opacity;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  
+  .input-text:focus + .label-helper, .input-text:invalid + .label-helper {
+    bottom: 95%;
+    font-family: arial;
+    font-size: 14px;
+    line-height: 1;
+    opacity: 1;
+    padding: 4px; }
+  .input-text:invalid {
+    border-left: 10px solid #f00; }
+    .input-text:invalid + .label-helper::after {
+      color: #f00;
+      content: "X";
+      font-family: arial;
+      font-size: 14px;
+      line-height: 1;
+      padding-left: 12px; }
+/* input----v2 */
