@@ -313,59 +313,64 @@ input:not(:focus):valid ~ .floating-label {
     padding-right: 24px;
 }
 
-
-
-
-
-
-
 /* input----v2 */
 
 .form-row {
     margin-bottom: 20px;
     padding: 4px 0;
-    position: relative; }
-  .form-block {
+    position: relative;
+}
+.form-block {
     border: 1px solid #cccccc;
     margin-bottom: 8px;
-    padding: 8px 12px; }
-  
-  .input-text {
-    background-color: white;
-    -webkit-appearance: none;
+    padding: 8px 12px;
+}
+
+.input-text {
+    font-size: 1rem;
+    outline: none;
     border: none;
-    border-bottom: 1px solid #cccccc;
-    font-family: Arial;
+    border-bottom: 1px solid #7c7c7c;
+    /* border-radius: 8px; */
+    padding: 0.375rem 0.75rem;
+    color: #000000;
+    
+    /* -webkit-appearance: none; */
     margin-bottom: 8px;
-    padding: 8px 4px;
     position: relative;
-    z-index: 3; }
-    .input-text:focus {
-      box-shadow: 0 0 6px rgba(0, 200, 222, 0.25);
-      background-color: #fafafa; }
-  
-  .label-helper {
+    z-index: 3;
+}
+.input-text:focus {
+    /* box-shadow: 0 0 6px rgba(0, 200, 222, 0.25); */
+    /* background-color: #fafafa; */
+}
+
+.label-helper {
     position: absolute;
     opacity: 0;
-    transition: .2s bottom, .2s opacity;
+    transition: 0.2s bottom, 0.2s opacity;
     bottom: 0;
     left: 0;
-    z-index: 1; }
-  
-  .input-text:focus + .label-helper, .input-text:invalid + .label-helper {
+    z-index: 1;
+}
+
+.input-text:focus + .label-helper,
+.input-text:invalid + .label-helper {
     bottom: 95%;
-    font-family: arial;
     font-size: 14px;
     line-height: 1;
     opacity: 1;
-    padding: 4px; }
-  .input-text:invalid {
-    border-left: 10px solid #f00; }
-    .input-text:invalid + .label-helper::after {
-      color: #f00;
-      content: "X";
-      font-family: arial;
-      font-size: 14px;
-      line-height: 1;
-      padding-left: 12px; }
+    padding: 4px;
+}
+.input-text:invalid {
+    border-left: 10px solid #f00;
+}
+.input-text:invalid + .label-helper::after {
+    color: #f00;
+    content: "X";
+    font-family: arial;
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 12px;
+}
 /* input----v2 */

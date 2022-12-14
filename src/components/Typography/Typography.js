@@ -51,9 +51,9 @@ function Typography() {
                 <main class="main-base" role="main">
                     <form class="content">
                         <div class="form-row">
-                            <input type="text" class="input-text" id="input" placeholder="Your Name" />
+                            <input type="text" class="input-text" id="input" placeholder="Placeholder" />
                             <label class="label-helper" for="input">
-                                Name
+                                Teknovus Label
                             </label>
                         </div>
                     </form>
