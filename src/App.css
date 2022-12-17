@@ -299,58 +299,26 @@ h6 {
 /* ********** tteknovus-input V1 end ********** */
 
 /* ----------- */
-/* ----------- */
 /* ********** teknovus-input V2 start ********** */
-.input-text {
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #7c7c7c;
-    padding: 0.375rem 0.75rem;
-    color: #000000;
-
-    /* -webkit-appearance: none; */
-    margin-bottom: 8px;
-    position: relative;
-    z-index: 3;
-}
-
 .teknovus-label-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     position: absolute;
     opacity: 0;
     transition: 0.2s bottom, 0.2s opacity;
     bottom: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #50af47;
 }
-
-.input-text:focus + .teknovus-label-2,
-.input-text:invalid + .teknovus-label-2 {
-    bottom: 95%;
-    font-size: 14px;
-    line-height: 1;
-    opacity: 1;
-    padding: 4px;
-}
-.input-text:invalid {
-    border-left: 10px solid #f00;
-}
-.input-text:invalid + .teknovus-label-2::after {
-    color: #f00;
-    content: "X";
-    font-size: 14px;
-    line-height: 1;
-    padding-left: 12px;
-}
-/* input----v2 end*/
-
 .teknovus-input-2 {
-    /* padding: 5px 10px 5px 50px; */
     line-height: 30px;
     outline: 0;
     display: block;
-    /* width: 50%; */
-
     font-size: 1rem;
     outline: none;
     /* border: none; */
@@ -358,34 +326,22 @@ h6 {
     border-radius: 8px;
     padding: 0.375rem 2.5rem;
     color: #000000;
-
     /* -webkit-appearance: none; */
     margin-bottom: 8px;
-    /* position: relative; */
-    /* z-index: 3; */
+}
+.teknovus-input-2:focus {
+    border-color: #50af47;
 }
 .teknovus-input-icon {
     position: absolute;
     left: 10px;
     top: 0;
-    /* font-size: 25px; */
     color: #7c7c7c;
     height: 100%;
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
-
-/* ====== */
-.teknovus-label-2 {
-    position: absolute;
-    opacity: 0;
-    transition: 0.2s bottom, 0.2s opacity;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
 .teknovus-input-2:focus + .teknovus-label-2,
 .teknovus-input-2:invalid + .teknovus-label-2 {
     bottom: 95%;
@@ -404,3 +360,4 @@ h6 {
     line-height: 1;
     padding-left: 12px;
 }
+/* ********** teknovus-input V2 end ********** */

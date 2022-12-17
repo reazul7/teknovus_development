@@ -3,7 +3,7 @@ import React from "react";
 function Typography() {
     return (
         <div className="container p-5">
-            <button className="btn btn-block btn-primary">
+            <button className="btn btn-primary">
                 <div className="btn-flex">
                     btn btn-danger
                     <span>
