@@ -3,17 +3,19 @@ import React from "react";
 function Typography() {
     return (
         <div className="container p-5">
-            <button className="btn btn-primary">
+            <button className="btn btn-block btn-primary">
                 <div className="btn-flex">
                     btn btn-danger
-                    <span>{/* <i class="bx bx-plus"></i> */}</span>
+                    <span>
+                        <i className="bx bx-plus"></i>
+                    </span>
                 </div>
             </button>
             <button className="btn btn-danger">
                 <div className="btn-flex">
                     btn btn-danger
                     <span>
-                        <i class="bx bx-plus"></i>
+                        <i className="bx bx-plus"></i>
                     </span>
                 </div>
             </button>
@@ -30,37 +32,36 @@ function Typography() {
             <br />
             <span className="p-5 m-5">.</span>
 
-            {/* input */}
+            {/* teknovus-input start */}
             <div className="my-3">
-                <div className="input-group-teknovus">
-                    <input className="input-teknovus" placeholder=" " type="text" />
-                    <label className="label-teknovus">Teknovus</label>
+                {/* teknovus-input V1 start */}
+                <div className="teknovus-input-group">
+                    <input className="teknovus-input" placeholder=" " type="text" />
+                    <label className="teknovus-label">Teknovus</label>
                 </div>
-                <div className="input-group-teknovus">
-                    <input className="input-teknovus" placeholder=" " type="text" />
-                    <label className="label-teknovus">Teknovus</label>
+                <div className="teknovus-input-group">
+                    <input className="teknovus-input" placeholder=" " type="text" />
+                    <label className="teknovus-label">Teknovus</label>
                 </div>
-                <div className="input-group-teknovus">
-                    <input className="input-teknovus border-all" placeholder=" " type="text" />
-                    <label className="label-teknovus">Teknovus</label>
+                <div className="teknovus-input-group">
+                    <input className="teknovus-input border-all" placeholder=" " type="text" />
+                    <label className="teknovus-label">Teknovus</label>
                 </div>
-            </div>
+                {/* teknovus-input V1 end */}
 
-            {/* input---2 */}
-            <div class="page">
-                <main class="main-base" role="main">
-                    <form class="content">
-                        <div class="form-row">
-                            <input type="text" class="input-text" id="input" placeholder="Placeholder" />
-                            <label class="label-helper" for="input">
-                                Teknovus Label
-                            </label>
-                        </div>
-                    </form>
-                </main>
+                {/*  */}
+                {/* teknovus-input V2 start */}
+                <div className="teknovus-input-group">
+                    <span className="teknovus-input-icon">
+                        <i className="bx bx-plus"></i>
+                    </span>
+                    <input type="text" className="teknovus-input-2" id="input" placeholder="Placeholder" />
+                    <label className="teknovus-label-2" for="input">
+                        Teknovus Label
+                    </label>
+                </div>
+                {/* teknovus-input V2 end */}
             </div>
-
-            {/*  */}
         </div>
     );
 }
