@@ -113,32 +113,37 @@ h6 {
 
 /* ********** Text Color ********** */
 .text-dark {
-    color: #000000;
+    color: var(--text-dark);
 }
 .text-secondary {
-    color: #515151;
+    color: var(--text-secondary);
 }
 .text-inactive {
-    color: #7c7c7c;
+    color: var(--text-inactive-color);
 }
 
-.bg-primary-tv,
+.bg-primary-tv {
+    background-color: var(--bg-primary-tv);
+}
 .bg-success-tv {
-    background-color: #50af47;
+    background-color: var(--bg-success-tv);
+}
+.bg-secondary-tv {
+    background-color: var(--bg-secondary-tv);
 }
 .bg-danger-tv {
-    background-color: #ff5500;
+    background-color: var(--bg-danger-tv);
 }
 .bg-warning-tv {
-    background-color: #ffee11;
+    background-color: var(--bg-warning-tv);
 }
 .bg-info-tv {
-    background-color: #5873cf;
+    background-color: var(--bg-info-tv);
 }
 
 /* ********** button ********** */
 .btn {
-    font-family: "Montserrat";
+    font-family: var(--font-family);
     border-radius: 8px;
     margin: 0.25rem 0.25rem;
     font-weight: 400;
@@ -183,7 +188,7 @@ h6 {
     vertical-align: baseline;
     border-radius: 0.25rem;
     border: none;
-    font-family: "Montserrat";
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -197,42 +202,42 @@ h6 {
     border-radius: 10rem;
 }
 
-.badge-primary {
-    color: #fff;
-    background: #007bff;
-}
-
 .btn-primary,
 .btn-primary:focus {
-    background: #50af47;
+    background: var(--bg-primary-tv);
     color: #ffffff;
 }
 .btn-primary:hover {
-    background: #447f40;
-    border-color: #146c43;
+    background: var(--bg-primary-hover-tv);
 }
 
 .btn-warning {
-    background: #ffee11;
+    background: var(--bg-warning-tv);
     color: #000000;
 }
 .btn-warning:hover {
-    background: #e7d728;
+    background: var(--bg-warning-hover-tv);
 }
 
 .btn-danger {
-    background: #ff5500;
-    color: #ffffff;
+    background: var(--bg-danger-tv);
+    color: var(--text-white);
 }
 .btn-danger:hover {
-    background: #c14f27;
+    background: var(--bg-danger-hover-tv);
+}
+.btn-info {
+    background: var(--bg-info-tv);
+    color: var(--text-white);
+}
+.btn-info:hover {
+    background: var(--bg-info-hover-tv);
 }
 
 /* ------------------- */
 /* ------------------- */
 /* ------------------- */
 /* ------------------- */
-
 /* ********** teknovus-input V1 start ********** */
 .teknovus-input-group {
     position: relative;
@@ -244,7 +249,7 @@ h6 {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #ffffff;
+    background-color: var(--text-white);
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -263,21 +268,21 @@ h6 {
     font-size: 1rem;
     outline: none;
     border: none;
-    border-bottom: 1px solid #7c7c7c;
+    border-bottom: 1px solid var( --border-color);
     /* border-radius: 8px; */
-    padding: 0.375rem 0.75rem;
+    padding: 0.375rem 1.5rem;
     color: #000000;
     transition: 0.1s ease-out;
 }
 .teknovus-input:focus {
-    border-color: #50af47;
+    border-color: var(--bg-primary-tv);
 }
 .teknovus-input:focus + label {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.2px;
-    color: #50af47;
+    color: var(--bg-primary-tv);
     top: 0;
     transform: translateY(-50%) scale(0.9);
 }
@@ -292,7 +297,7 @@ h6 {
 
 /* for full border in 'teknovus-input' */
 .border-all {
-    border: 1px solid #50af47;
+    border: 1.5px solid var(--bg-primary-tv);
     border-radius: 8px;
     margin-left: -4px;
 }
@@ -313,7 +318,7 @@ h6 {
     display: flex;
     align-items: center;
     letter-spacing: 0.1px;
-    color: #50af47;
+    color: var(--bg-primary-tv);
 }
 .teknovus-input-2 {
     line-height: 30px;
@@ -321,26 +326,27 @@ h6 {
     display: block;
     font-size: 1rem;
     outline: none;
-    /* border: none; */
-    border: 1px solid #7c7c7c;
-    border-radius: 8px;
-    padding: 0.375rem 2.5rem;
-    color: #000000;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    /* border-radius: 8px; */
+    padding: 0.375rem 1.5rem;
+    color: var(--text-dark);
     /* -webkit-appearance: none; */
     margin-bottom: 8px;
+    padding-left: 30px;
 }
+
 .teknovus-input-2:focus {
-    border-color: #50af47;
+    border-color: var(--bg-primary-tv);
 }
 .teknovus-input-icon {
     position: absolute;
     left: 10px;
     top: 0;
-    color: #7c7c7c;
+    color: var(--text-inactive-color);
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 .teknovus-input-2:focus + .teknovus-label-2,
 .teknovus-input-2:invalid + .teknovus-label-2 {
@@ -350,14 +356,9 @@ h6 {
     opacity: 1;
     padding: 4px;
 }
-.teknovus-input-2:invalid {
-    border-left: 10px solid #f00;
-}
-.teknovus-input-2:invalid + .teknovus-label-2::after {
-    color: #f00;
-    content: "X";
-    font-size: 14px;
-    line-height: 1;
-    padding-left: 12px;
+.border-all {
+    border: 1.5px solid var(--bg-primary-tv);
+    border-radius: 8px;
+    margin-left: -4px;
 }
 /* ********** teknovus-input V2 end ********** */

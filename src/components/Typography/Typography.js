@@ -26,7 +26,7 @@ function Typography() {
             <span className="badge badge-pill bg-primary-tv">badge badge-pill</span>
             <span className="badge badge-pill bg-danger-tv">badge badge-pill</span>
             <span className="badge badge-pill bg-warning-tv text-dark">badge badge-pill</span>
-            <span className="badge badge-pill bg-success-tv">badge badge-pill</span>
+            <span className="badge badge-pill bg-secondary-tv">badge badge-pill</span>
             <span className="badge badge-pill bg-info-tv">badge badge-pill</span>
 
             <br />
@@ -56,6 +56,16 @@ function Typography() {
                         <i className="bx bx-plus"></i>
                     </span>
                     <input type="text" className="teknovus-input-2" id="input" placeholder="Placeholder" />
+                    <label className="teknovus-label-2" for="input">
+                        Teknovus Label
+                    </label>
+                </div>
+                
+                <div className="teknovus-input-group ">
+                    <span className="teknovus-input-icon">
+                        <i className="bx bx-plus"></i>
+                    </span>
+                    <input type="text" className="teknovus-input-2 border-all " id="input" placeholder="Placeholder" />
                     <label className="teknovus-label-2" for="input">
                         Teknovus Label
                     </label>
