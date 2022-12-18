@@ -11,9 +11,9 @@
 
     /* other-color */
     --text-inactive-color: #7c7c7c;
-    --text-field-default-color: #A8A8A8;
+    --text-field-color: #A8A8A8;
     --border-color: #7C7C7C;
-    --desable-background-color: #F5F5F5;
+    --disable-bg-color: #F5F5F5;
 
     /* bg-color */
     --bg-primary-tv: #50af47;
