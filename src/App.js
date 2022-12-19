@@ -1,4 +1,4 @@
-import "./App.css";
+
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -8,8 +8,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 import Home from "./components/Home/Home";
 import Typography from "./components/Typography/Typography";
+import Inputs from "./components/Typography/Inputs";
 
-
+import "./App.css";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/typography">Typography</Nav.Link>
+            <Nav.Link as={Link} to="/inputs">Inputs</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -41,6 +43,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/typography" element={<Typography />} />
+        <Route path="/inputs" element={<Inputs />} />
   </Routes>
     </BrowserRouter>
   );

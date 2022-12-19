@@ -1,33 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-    /* font */
+    /* font-family */
     --font-family: "Montserrat";
 
-    /* text-color */
-    --text-dark: #000000;
+    /* Text Colors */
+    --text-primary: #5873CF;
     --text-secondary: #515151;
+    --text-success: #50AF47;
+    --text-info: #79BDAB;
+    --text-warning: #FFEE11;
+    --text-danger: #FF5500;
+    --text-dark: #000000;
+    --text-deactive: #7C7C7C;
     --text-white: #ffffff;
 
-    /* other-color */
-    --text-inactive-color: #7c7c7c;
-    --text-field-color: #A8A8A8;
-    --border-color: #7C7C7C;
-    --disable-bg-color: #F5F5F5;
+    /* Theme Color */
+    --primary: #5873CF;
+    --primary-dark: #4564CA;
+    --primary-light: #B5C1EA;
 
-    /* bg-color */
-    --bg-primary-tv: #50af47;
-    --bg-success-tv: #50af47;
-    --bg-secondary-tv: #5873CF;
-    --bg-danger-tv: #ff5500;
-    --bg-warning-tv: #ffee11;
-    --bg-info-tv: #79BDAB;
-    
-    /* bg-hover-color */
-    --bg-primary-hover-tv: #447F40;
-    --bg-success-hover-tv: #447F40;
-    --bg-secondary-hover-tv: #4564CA;
-    --bg-danger-hover-tv: #C14F27;
-    --bg-warning-hover-tv: #E7D728;
-    --bg-info-hover-tv: #6CA898;
+    --secondary: #515151;
+
+    --success: #50AF47;
+    --success-dark: #447F40;
+    --success-light: #81BE6E;
+
+    --info: #79BDAB;
+    --info-dark: #6CA898;
+    --info-light: #AFD7CD;
+
+    --warning: #FFEE11;
+    --warning-dark: #E7D728;
+    --warning-light: #FEF28B;
+
+    --danger: #FF5500;
+    --danger-dark: #C14F27;
+    --danger-light: #F3723A;
+
+    --dark: #000000;
+    --dark-900: #515151;
+    --dark-800: #7C7C7C;
+    --dark-700: #A8A8A8;
+    --dark-600: #D3D3D3;
+    --dark-500: #EAEAEA;
+    --dark-400: #F5F5F5;
+
+    --light: #FFFFFF;
+
+    /* for diactive */
+    --deactive: #EAEAEA;
+    --deactive-dark: #A8A8A8;
+
+    /* for input field */
+    --input-border: #7C7C7C;
+    --input-text: #A8A8A8;
+
+    --input-border-focus: #50AF47;
+    --input-text-focus: #50AF47;
 }
