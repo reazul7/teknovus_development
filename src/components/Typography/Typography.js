@@ -2,7 +2,7 @@ import React from "react";
 
 function Typography() {
     return (
-        <div className="container p-5">
+        <div className="container">
             {/* ********** bg-color ********** */}
             <section>
                 <h6 className="bg-secondary text-center">Background Color Classes</h6>
@@ -122,175 +122,52 @@ function Typography() {
                 <span className="badge bg-dark">badge bg-dark</span>
             </section>
 
-            {/* ********** Input ********** */}
-            <h6 className="bg-secondary text-center mt-5"> Line Input</h6>
-            <section className="my-4">
-                {/* Sample-1 */}
-                <div className="teknovus-input-group">
-                    <input className="teknovus-input" placeholder=" " type="text" />
-                    <label className="teknovus-label">Teknovus</label>
-                </div>
-
-                {/* Sample-2 */}
-                <div className="teknovus-input-group">
-                    <input className="teknovus-input border-all" placeholder=" " type="text" />
-                    <label className="teknovus-label">Teknovus</label>
-                </div>
-
-                {/* v2  */}
-                {/* V2 sample-2 */}
-                <div className="teknovus-input-group ">
-                    <span className="teknovus-input-icon">
-                        <i className="bx bx-plus"></i>
-                    </span>
-                    <input type="text" className="teknovus-input-2 border-all " id="input" placeholder="Placeholder" />
-                    <label className="teknovus-label-2" for="input">
-                        Teknovus Label
-                    </label>
-                </div>
-
-                {/* V2 sample-2 */}
-                <div className="teknovus-input-group right-addon">
-                    <span className="teknovus-input-icon">
-                        <i className="bx bx-plus"></i>
-                    </span>
-                    <i className="inner-addon-element tek-icon bx bx-search fs-24"></i>
-                    <input type="text" className="teknovus-input-2 border-all " id="input" placeholder="Placeholder" />
-                    <label className="teknovus-label-2" for="input">
-                        Teknovus Label
-                    </label>
-                </div>
-
-                {/* Sample-3 with icon */}
-                <div className="teknovus-input-group right-addon">
-                    <i className="inner-addon-element tek-icon bx bx-search fs-24"></i>
-                    <input type="text" className="form-control" placeholder="Search" />
-                    <label className="teknovus-label-3">Teknovus</label>
-                </div>
-            </section>
 
 
 
-            {/*  */}
-            {/*  */}
-            {/*  */}
-
-            {/* teknovus-input start */}
-            <div className="my-3">
-                {/* teknovus-input V1 start */}
-                {/* V1 sample-1 */}
-                <div className="teknovus-input-group">
-                    <input className="teknovus-input" placeholder=" " type="text" />
-                    <label className="teknovus-label">Teknovus</label>
-                </div>
-
-                {/* V1 sample-2 */}
-                <div className="teknovus-input-group">
-                    <input className="teknovus-input" placeholder=" " type="text" />
-                    <label className="teknovus-label">Teknovus</label>
-                </div>
-
-                {/* V1 sample-3 */}
-                <div className="teknovus-input-group">
-                    <input className="teknovus-input border-all" placeholder=" " type="text" />
-                    <label className="teknovus-label">Teknovus</label>
-                </div>
-                {/* teknovus-input V1 end */}
-
-                {/* teknovus-input V2 start */}
-                {/* V2 sample-1 */}
-                <div className="teknovus-input-group">
-                    <span className="teknovus-input-icon">
-                        <i className="bx bx-plus"></i>
-                    </span>
-                    <input type="text" className="teknovus-input-2" id="input" placeholder="Placeholder" />
-                    <label className="teknovus-label-2" for="input">
-                        Teknovus Label
-                    </label>
-                </div>
-
-                {/* V2 sample-2 */}
-                <div className="teknovus-input-group ">
-                    <span className="teknovus-input-icon">
-                        <i className="bx bx-plus"></i>
-                    </span>
-                    <input type="text" className="teknovus-input-2 border-all " id="input" placeholder="Placeholder" />
-                    <label className="teknovus-label-2" for="input">
-                        Teknovus Label
-                    </label>
-                </div>
-
-                {/* input-filed with label */}
-                <div className="teknovus-input-group">
-                    <label for="exampleInputEmail1" className="dropdown-input-label">
-                        Email address
-                    </label>
-                    <input
-                        type="text"
-                        placeholder="Name"
-                        className="dropdown-input-border form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                    />
-                </div>
-
-                {/*  */}
-                {/*  */}
-                <div class="inner-addon right-addon">
-                    <i class="inner-addon-element bx bx-search fs-24"></i>
-                    <input type="text" class="form-control" placeholder="Search" />
-                </div>
-                {/*  */}
-                {/*  */}
-                {/* teknovus-input V2 end */}
-
-                {/* dropdown-input */}
-                <div className="dropdown-input">
-                    <label className="dropdown-input-label">Buyer</label>
-                    <select className="form-select" aria-label=".form-select">
-                        <option selected>Select</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-
-                {/* table-bordered start */}
-                <div className="my-5">
-                    <table className="table table-bordered teknovus-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>Larry the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                {/* table-bordered start */}
+            {/* =============== */}
+            {/* =============== */}
+            {/* dropdown-input */}
+            <div className="dropdown-input">
+                <label className="dropdown-input-label">Buyer</label>
+                <select className="form-select" aria-label=".form-select">
+                    <option selected>Select</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
-            
-            {/*  */}
-            {/*  */}
-            {/*  */}
-            {/*  */}
+
+            {/* table-bordered start */}
+            <div className="my-5">
+                <table className="table table-bordered teknovus-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {/* table-bordered end */}
         </div>
     );
 }
