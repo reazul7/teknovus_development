@@ -374,3 +374,37 @@ h6 {
 .border-all~.input-icon-right{
     right: 3px;
 } */
+
+/* ********** Dropdown Input ********** */
+.dropdown-input-label {
+    margin: 0;
+    color: var(--input-text);
+}
+.form-select {
+    width: 184px;
+    border: 1px solid var(--input-border);
+    height: 40px;
+    border-radius: 8px;
+}
+.form-select:focus {
+    outline: 0 none;
+    border: 1px solid var(--input-border);
+    -webkit-box-shadow: none;
+}
+
+/* ********** teknovus-table ********** */
+.teknovus-table th,
+.teknovus-table tr,
+.teknovus-table tbody {
+    border: 1px solid var(--input-text) !important;
+}
+.teknovus-table th {
+    color: var(--text-secondary);
+    font-weight: 500;
+    background-color: var(--dark-500);
+    font-size: 14px;
+    text-align: center;
+}
+.teknovus-table tr {
+    color: var(--input-text);
+}

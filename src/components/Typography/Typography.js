@@ -121,53 +121,6 @@ function Typography() {
                 <span className="badge bg-danger">badge bg-danger</span>
                 <span className="badge bg-dark">badge bg-dark</span>
             </section>
-
-
-
-
-            {/* =============== */}
-            {/* =============== */}
-            {/* dropdown-input */}
-            <div className="dropdown-input">
-                <label className="dropdown-input-label">Buyer</label>
-                <select className="form-select" aria-label=".form-select">
-                    <option selected>Select</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-
-            {/* table-bordered start */}
-            <div className="my-5">
-                <table className="table table-bordered teknovus-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            {/* table-bordered end */}
         </div>
     );
 }
