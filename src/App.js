@@ -11,6 +11,7 @@ import Typography from "./components/Typography/Typography";
 import Inputs from "./components/Typography/Inputs";
 
 import "./App.css";
+import SocektIO from "./components/Typography/SocektIO";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/typography">Typography</Nav.Link>
             <Nav.Link as={Link} to="/inputs">Inputs</Nav.Link>
+            <Nav.Link as={Link} to="/socekt-io">SocektIO</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -44,6 +46,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/typography" element={<Typography />} />
         <Route path="/inputs" element={<Inputs />} />
+        <Route path="/socekt-io" element={<SocektIO />} />
   </Routes>
     </BrowserRouter>
   );
